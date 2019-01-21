@@ -11,10 +11,13 @@ set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR}/lib)
 
 INCLUDE_DIRECTORIES(.)
 
+ADD_SUBDIRECTORY(utils)
+
 SET(PROBLEM_DIRS
         01_AssignmentOperator
         04_FindInPartiallySortedMatrix
         05_ReplaceSpaces
+        06_PrintListInReversedOrder
         )
 
 FOREACH(PROBLEM_DIR ${PROBLEM_DIRS})

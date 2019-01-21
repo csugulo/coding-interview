@@ -9,9 +9,12 @@
 #include <vector>
 #include <functional>
 #include <algorithm>
+#include <stack>
 
 #include <cstring>
 
 using namespace std;
+
+
 
 #endif //CODING_INTERVIEW_CODING_INTERVIEW_H

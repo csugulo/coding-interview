@@ -43,15 +43,8 @@ String::~String(){
 
 int main(){
     char * text = "123";
-    String str1(text);
-    String str2;
-    str2 = str1;
-    std::cout << str2.pData_ << std::endl;
-
-    str1 = str1;
-    std::cout << str1.pData_ << std::endl;
-
-    String str3 = str2 = str1;
-
+    String str1(text), str2, str3;
+    str3 = (str2 = str1);
+    cout << str1.pData_ << "\t" << str2.pData_ << "\t" << str3.pData_;
     return 0;
 }
